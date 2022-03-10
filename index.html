@@ -69,6 +69,8 @@
                     </ul>
                 </div>
             </nav>
+
+            
         </header>
         <main class="main container mx-auto p-3">
             <div id="posts">
@@ -80,66 +82,68 @@
             <div id="reported">
                 <h1>Reported posts</h1>
             </div>
+
+            <section class="container my-5" id="accordion-section">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5>How does JavaScript works?</h5>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-lg-row flex-column ">
+                    <img class=" img-fluid " src="./img/javascript_logo.png" alt="" srcset="">
+                    <div>
+                        <h4 class=" mt-lg-0 mt-4 text-accordion">
+                                JavaScript is a client-side scripting language that primarily aids in creating interactive websites. JavaScript is also known as a programming language with a single thread. It features a single call stack and only executes one function at a time. When you start a JavaScript program, an Execution Context is produced. This execution context allocates memory to all of the variables and functions in that program. When JavaScript performs a function, the execution context moves from Global Execution Context to Local Execution Context and then back again. JavaScript uses the Call Stack to keep track of this switching. After returning to the Global Execution Context, the Call Stack is cleaned, restoring the program to its starting state.
+                        </h4>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>What does JavaScript Event Loop Do?</h5>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-lg-row flex-column align-items-center">
+                    
+                        <img class="img-fluid" src="./img/Javascript-event-loop_400x400.png" alt="" srcset="">
+                    
+                    <div>
+                        <h4 class=" mt-lg-0 mt-4 text-accordion">
+                                Javascript is a synchronous programming language with a single thread that executes a single function at a time in a synchronous way. However, Javascript may also do asynchronous behavior in particular instances, and the Event Loop is the principal concept underlying Javascript's asynchronous programming. Call Stack keeps track of all the synchronous and asynchronous functions of a program. The function gets popped off of the stack when it has completed its execution. The Event Queue is in charge of dispatching new functions to the stack for execution. It keeps track of the proper order in which all functions should be executed. When an asynchronous function, such as the setTimeout Method, fetch Method, or setTimeInterval Method, is called, it is routed to the built-in browser API, which begins execution of the function in its own single-threaded process, with the browser API acting as a separate thread. The Event Loop continuously checks to see whether the call stack is empty. If it is empty, new functions from the event queue are added. If it isn't, the current function call is executed.
+                        </h4>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5>Local Stotrage Vs. Session Storage.</h5>
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-lg-row flex-column ">
+                    <img class=" img-fluid me-lg-5" src="./img/local-storage.webp" alt="" srcset="">
+                    <div>
+                        <h4 class=" mt-lg-0 mt-4 text-accordion">
+                                The expiration time is the only significant difference between Local Storage and Session Storage.Persistent storage is provided via Local Storage, which may be accessed even when the browser is closed. Because of this, the storage is preserved even if the domain or browser is opened in a new tab or restarted. There's no time limit attached. Whereas, Session Storage is cleared out after closing the page session. A page session is effective as long as the tab or window is active. So when a new tab or window is opened, the browser effectively creates a new session and stores data for the duration of that session.
+                        </h4>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
 
 
-        <section class="container my-5">
-            <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <h5>How does JavaScript works?</h5>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body d-flex flex-lg-row flex-column ">
-       <img class=" img-fluid " src="./img/javascript_logo.png" alt="" srcset="">
-       <div>
-           <h4 class=" mt-lg-0 mt-4 text-accordion">
-                JavaScript is a client-side scripting language that primarily aids in creating interactive websites. JavaScript is also known as a programming language with a single thread. It features a single call stack and only executes one function at a time. When you start a JavaScript program, an Execution Context is produced. This execution context allocates memory to all of the variables and functions in that program. When JavaScript performs a function, the execution context moves from Global Execution Context to Local Execution Context and then back again. JavaScript uses the Call Stack to keep track of this switching. After returning to the Global Execution Context, the Call Stack is cleaned, restoring the program to its starting state.
-           </h4>
-       </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h5>What does JavaScript Event Loop Do?</h5>
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body d-flex flex-lg-row flex-column align-items-center">
-    
-           <img class="img-fluid" src="./img/Javascript-event-loop_400x400.png" alt="" srcset="">
-    
-       <div>
-           <h4 class=" mt-lg-0 mt-4 text-accordion">
-                Javascript is a synchronous programming language with a single thread that executes a single function at a time in a synchronous way. However, Javascript may also do asynchronous behavior in particular instances, and the Event Loop is the principal concept underlying Javascript's asynchronous programming. Call Stack keeps track of all the synchronous and asynchronous functions of a program. The function gets popped off of the stack when it has completed its execution. The Event Queue is in charge of dispatching new functions to the stack for execution. It keeps track of the proper order in which all functions should be executed. When an asynchronous function, such as the setTimeout Method, fetch Method, or setTimeInterval Method, is called, it is routed to the built-in browser API, which begins execution of the function in its own single-threaded process, with the browser API acting as a separate thread. The Event Loop continuously checks to see whether the call stack is empty. If it is empty, new functions from the event queue are added. If it isn't, the current function call is executed.
-           </h4>
-       </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h5>Local Stotrage Vs. Session Storage.</h5>
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body d-flex flex-lg-row flex-column ">
-       <img class=" img-fluid me-lg-5" src="./img/local-storage.webp" alt="" srcset="">
-       <div>
-           <h4 class=" mt-lg-0 mt-4 text-accordion">
-                The expiration time is the only significant difference between Local Storage and Session Storage.Persistent storage is provided via Local Storage, which may be accessed even when the browser is closed. Because of this, the storage is preserved even if the domain or browser is opened in a new tab or restarted. There's no time limit attached. Whereas. Session Storage is cleared out after closing the page session. A page session is effective as long as the tab or window is active. So when a new tab or window is opened, the browser effectively creates a new session and stores data for the duration of that session.
-           </h4>
-       </div>
-      </div>
-    </div>
-  </div>
-</div>
-        </section>
+        
 
 
         <footer></footer>
